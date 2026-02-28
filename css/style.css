@@ -1,28 +1,25 @@
-/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corpo */
 body {
     font-family: "Segoe UI", Roboto, Arial, sans-serif;
-    background: linear-gradient(135deg, #232323, #2f2f2f);
+    background-color: #2c2c2c;
     color: #e4e4e4;
     padding: 50px;
 }
 
-/* Títulos */
 h1 {
-    font-size: 30px;
+    font-size: 28px;
     margin-bottom: 25px;
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
 
 h2 {
-    font-size: 18px;
+    font-size: 16px;
     margin: 35px 0 15px 0;
     font-weight: 500;
     color: #bdbdbd;
@@ -30,77 +27,49 @@ h2 {
     letter-spacing: 1px;
 }
 
-/* Tabelas */
 table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #3a3a3a;
+    background-color: #383838;
     margin-bottom: 35px;
-    border-radius: 10px;
+    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    transition: box-shadow 0.2s ease;
 }
 
-/* Efeito de elevação ao passar o mouse */
 table:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
 }
 
-/* Cabeçalho */
 th {
     text-align: left;
-    padding: 16px;
-    background: linear-gradient(to right, #444, #505050);
+    padding: 14px;
+    background-color: #444;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 13px;
     color: #ffffff;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
 }
 
-/* Células */
 td {
-    padding: 16px;
+    padding: 14px;
     font-size: 14px;
     color: #d6d6d6;
-    transition: background 0.2s ease, padding-left 0.2s ease;
 }
 
-/* Linhas */
 tr {
     border-bottom: 1px solid #4a4a4a;
 }
 
-/* Zebra sutil */
 tr:nth-child(even) {
-    background-color: #353535;
+    background-color: #333;
 }
 
-/* Hover nas linhas */
-tr:hover td {
-    background-color: #4f4f4f;
-    padding-left: 20px;
+tr:hover {
+    background-color: #4a4a4a;
 }
 
-/* Remove borda da última linha */
 tr:last-child {
     border-bottom: none;
-}
-
-/* Animação suave ao carregar */
-table {
-    animation: fadeIn 0.6s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
